@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changle's Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark  fixed-top" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand px-4" href="/index.html">
+      <span class="poppins-extrabold-italic" style="color: rgb(250, 206, 62);">Changle</span> | Data Enthusiast
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto px-3">
+        <li class="nav-item px-3">
+          <a class="nav-link text-muted" href="/index.html#home">HOME</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link text-muted" href="/index.html#about">ABOUT ME</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link text-muted" href="/index.html#projects">PROJECTS</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link text-muted" href="https://drive.google.com/file/d/1MqrwEHL_FYoldS2mOyYmGCzBzz976jkH/view?usp=sharing">RESUME</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link text-muted" href="#contact">CONTACT</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+  <div class="container mt-5 pt-5 mb-5 pb-5">
+    <!-- Project Section -->
+    <div class="text-section text-muted">
+        <h1 class="project-title">Czii Object Identification</h1>
+        <hr class="my-4" />
+        <h3><strong>Overview</strong></h3>
+        <p class="project-description">
+            This project applies deep learning techniques to Cryo-Electron Tomography (CryoET) data, enabling the precise identification and segmentation of protein complexes. It automates the annotation process, addressing the challenges of low signal-to-noise ratios and dense cellular environments, advancing biological research and medical discoveries.
+        </p>
+
+        <hr class="my-4" />
+        <h3><strong>Dataset</strong></h3>
+        <p class="project-description">
+            The dataset includes seven CryoET tomograms (180×630×630) with manually annotated centroids for six protein complexes:
+        </p>
+        <p class="project-description"><strong>- Protein Types:</strong> Apo-ferritin, beta-amylase, beta-galactosidase, ribosomes, thyroglobulin, and virus-like particles.</p>
+        <p class="project-description"><strong>- Challenges:</strong> High data complexity and noise requiring advanced preprocessing and augmentation.</p>
+
+        <hr class="my-4" />
+        <h3><strong>Methodology</strong></h3>
+        <p class="project-description"><strong>- Deep Learning Models:</strong> Implemented a 3D U-Net architecture for voxel-level segmentation, with Tversky loss to balance precision and recall.</p>
+        <p class="project-description"><strong>- Patch-Based Training:</strong> Divided tomograms into 96×96×96 patches to reduce computational load and optimize training efficiency.</p>
+        <p class="project-description"><strong>- Centroid Localization:</strong> Utilized connected component analysis and KD-trees for accurate object identification within reconstructed tomograms.</p>
+
+        <hr class="my-4" />
+        <h3><strong>Key Findings</strong></h3>
+        <p class="project-description"><strong>- Precision:</strong> Achieved high precision for ribosomes and apo-ferritin (up to 0.72).</p>
+        <p class="project-description"><strong>- Recall:</strong> Maintained near-perfect recall across most protein types, ensuring minimal missed detections.</p>
+        <p class="project-description"><strong>- Metrics:</strong> fbeta-4 score peaked at 0.72, balancing recall and precision for dense particle localization.</p>
+
+        <img src="images/projects/pj1img1.jpg" class="project-image" alt="CryoET" />
+        <!-- Buttons -->
+        <div class="d-flex justify-content-center">
+            <a href="https://drive.google.com/file/d/1FVlk3EEB04WpcZ9iBBWr5jInT32t9v-q/view?usp=sharing" class="btn text-white btn-lg mx-auto">View Report</a>
+            <a href="https://github.com/trungnq0202/cryoET-kaggle-2024" class="btn text-white btn-lg mx-auto">Full Code</a>
+            <a href="https://cryoetdataportal.czscience.com/datasets/10440" class="btn text-white btn-lg mx-auto">Explore Dataset</a>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+
+    </div>
+    <section class="contact-section py-5 bg-custom" id="contact">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="text-center mb-5">
+          <!-- <h5 class="text-uppercase text-muted">Get In Touch</h5> -->
+          <h2 class="fw-bold text-white">Contact Me</h2>
+          <p class="text-muted">
+            Let's chat! Your data, my brain - together we can be unstoppable.
+          </p>
+          <hr class="my-4 w-50 mx-auto" />
+        </div>
+  
+        <!-- Contact Information -->
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <ul class="list-unstyled">
+  
+              <!-- Email -->
+              <li class="d-flex align-items-center mb-3">
+                <div class="icon-container me-3">
+                  <i class="fas fa-envelope text-white" style="font-size: 1.5rem;"></i>
+                </div>
+                <span><a href="mailto:ericxie.d@gmail.com" class="text-muted"
+                    target="_blank">ericxie.d@gmail.com</a></span>
+              </li>
+  
+              <!-- Leetcode -->
+              <li class="d-flex align-items-center mb-3">
+                <div class="icon-container me-3">
+                  <!--<a href="https://iconscout.com/icons/leetcode" class="text-underline font-size-sm" target="_blank">Leetcode</a> by <a href="https://iconscout.com/contributors/icon-54" class="text-underline font-size-sm" target="_blank">Icon 54</a> -->
+                  <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                    id="leetcode" style="width:75%;  fill: #eeeeee;">
+                    <path
+                      d="M22,14.355c0-0.742-0.564-1.346-1.26-1.346H10.676c-0.696,0-1.26,0.604-1.26,1.346s0.563,1.346,1.26,1.346H20.74C21.436,15.702,22,15.098,22,14.355z">
+                    </path>
+                    <path
+                      d="M3.482,18.187l4.313,4.361C8.768,23.527,10.113,24,11.598,24c1.485,0,2.83-0.512,3.805-1.494l2.588-2.637c0.51-0.514,0.492-1.365-0.039-1.9c-0.531-0.535-1.375-0.553-1.884-0.039l-2.676,2.607c-0.462,0.467-1.102,0.662-1.809,0.662s-1.346-0.195-1.81-0.662l-4.298-4.363c-0.463-0.467-0.696-1.15-0.696-1.863c0-0.713,0.233-1.357,0.696-1.824l4.285-4.38c0.463-0.467,1.116-0.645,1.822-0.645s1.346,0.195,1.809,0.662l2.676,2.606c0.51,0.515,1.354,0.497,1.885-0.038c0.531-0.536,0.549-1.387,0.039-1.901l-2.588-2.636c-0.649-0.646-1.471-1.116-2.392-1.33l-0.034-0.007l2.447-2.503c0.512-0.514,0.494-1.366-0.037-1.901c-0.531-0.535-1.376-0.552-1.887-0.038L3.482,10.476C2.509,11.458,2,12.813,2,14.311C2,15.809,2.509,17.207,3.482,18.187z">
+                    </path>
+                  </svg>
+                </div>
+                <span><a href="https://leetcode.com/u/keylovett/" target="_blank"
+                    class="text-muted">leetcode.com/u/keylovett/</a></span>
+              </li>
+  
+              <!-- GitHub -->
+              <li class="d-flex align-items-center mb-3">
+                <div class="icon-container me-3">
+                  <i class="fab fa-github text-white" style="font-size: 1.5rem;"></i>
+                </div>
+                <span><a href="https://github.com/EricXied" target="_blank"
+                    class="text-muted">github.com/EricXied</a></span>
+              </li>
+  
+              <!-- LinkedIn -->
+              <li class="d-flex align-items-center mb-3">
+                <div class="icon-container me-3">
+                  <i class="fab fa-linkedin text-white" style="font-size: 1.5rem;"></i>
+                </div>
+                <span><a href="https://linkedin.com/in/changlex/" target="_blank"
+                    class="text-muted">linkedin.com/in/changlex/</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

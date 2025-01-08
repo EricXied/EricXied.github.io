@@ -1,0 +1,575 @@
+/* CSS for the font */
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #000000, #000000);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+  border-radius: 30px;
+  margin: auto;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid rgba(183, 214, 248, 0.5);
+  box-shadow: 0 0 10px rgba(183, 214, 248, 0.8);
+}
+
+.btn:hover {
+  background-color: #f4c10f;
+}
+
+.btn-sm {
+  width: 150px;
+  padding: 0.3rem 1.7rem;
+  font-size: 0.9rem;
+}
+
+.btn-lg {
+  width: 220px;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+}
+
+.container-bg {
+  /* padding: 80px; */
+  border-radius: 50px;
+  background: linear-gradient(to bottom, #000000 20%, #221f26 50%, #000000 80%);
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.header-background {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  width: 80%;
+  height: 100%;
+  background: radial-gradient(circle,
+      rgba(27, 24, 24, 0.4) 30%,
+      rgb(0, 0, 0) 70%,
+      rgb(0, 0, 0) 100%),
+
+    url('images/background/photo_2025-01-03_15-52-46.jpg');
+  background-size: cover;
+  z-index: 1;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  /* text-align: center; */
+  padding: 20px;
+}
+
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+h1 span {
+  color: #C0A062;
+}
+
+
+.photo-container {
+  width: 150px;
+  /* Adjust as per your photo size */
+  height: 150px;
+  /* Ensures circular shape */
+  animation: border-flash 5s infinite;
+  background: linear-gradient(90deg, #ffcc00, #ff66cc, #66ccff);
+  /* Gradient colors for flash */
+  background-size: 300% 300%;
+  padding: 2px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
+  /* Space for the border effect */
+}
+
+.photo-container:hover {
+  transform: scale3d(1.15, 1.15, 1.15);
+}
+
+/* Flashing border animation */
+@keyframes border-flash {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@keyframes project-border-glow {
+  0% {
+    box-shadow: 0 0 10px #444444, 0 0 25px #555555, 0 0 40px #666666;
+  }
+
+  50% {
+    box-shadow: 0 0 10px #555555, 0 0 25px #666666, 0 0 40px #444444;
+  }
+
+  100% {
+    box-shadow: 0 0 10px #444444, 0 0 25px #555555, 0 0 40px #666666;
+  }
+}
+
+.white-color {
+  color: rgb(225, 246, 208);
+}
+
+.overview-section,
+.projects-section {
+  padding: 0px 10%;
+  /* align-content: center; */
+}
+
+.overview-section h2,
+.projects-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.overview-section h5,
+.projects-section h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.overview-section img {
+  width: 100%;
+  /* height: 200px; */
+  border-radius: 20px;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); */
+  transition: transform 0.5s ease, box-shadow 0.2s ease;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  /* filter: brightness(1.25) contrast(0.85); */
+  /* mix-blend-mode: lighten; */
+
+}
+
+.overview-section img:hover {
+  transform: scale3d(1.5, 1.5, 1.5);
+}
+
+.projects-section p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+
+.text-muted {
+  color: #bbbbbb !important;
+}
+
+.card {
+  width: 25%;
+  background: linear-gradient(145deg, #1e1e22, #29292f);
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: left;
+  font-size: 1.5rem;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  animation: project-border-glow 3s infinite;
+  /* min-height: 550px; */
+}
+
+
+.about-card {
+  width: 25%;
+  height: auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #1e1e22, #29292f);
+  /* background-size: 300% 300%; */
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: left; */
+  /* justify-content: center; */
+  height: 100%;
+  padding: 20px;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f4c10f;
+  text-align: center;
+}
+
+
+
+.card h6 {
+  font-size: 0.9rem;
+  color: #f4c10f;
+  /* Highlight color for category */
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+
+.project-img {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+
+}
+
+
+.contact-section {
+  padding: 50px 10%;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(20, 20, 20, 0.9)), url('images/contact-background.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.contact-section h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.icon-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #444;
+}
+
+.list-unstyled {
+  padding-left: 0;
+}
+
+.list-unstyled li {
+  font-size: 1.1rem;
+}
+
+a.text-muted:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+hr {
+  border: 1px solid #555;
+}
+
+
+/* CSS for Sticky Navbar */
+.navbar:hover {
+  background-color: #201c1c;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 10px rgba(62, 54, 79, 0.2);
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+
+.navbar-nav .nav-link:hover {
+  /* Slightly lighter white when hovering over links */
+  text-decoration: none;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+#navbar.hidden {
+  transform: translateY(-100%);
+}
+
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    /* background-color: #3b4855; */
+    /* Same as navbar color for seamless look */
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Container for the project page */
+.project-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  justify-content: center;
+}
+
+/* Left Section: Text Area */
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  /* White text */
+}
+
+.project-category {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #aaaaaa;
+  /* Gray text */
+}
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 80%;
+  white-space: normal;
+  /* overflow: hidden; */
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+.project-details li {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Right Section: Image Display Area */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* Allow images to wrap to the next line */
+  gap: 30px;
+  /* Space between images */
+  /* Pure black */
+}
+
+.image-section img {
+  width: 300px;
+  height: auto;
+  /* object-fit: cover; */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+  /* Subtle glow effect */
+}
+
+
+.project-image {
+  max-width: 70%;
+  max-height: 80%;
+  border-radius: 10px;
+  margin: 10px auto 40px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    /* Stack sections vertically */
+  }
+
+  .text-section {
+    border-right: none;
+    border-bottom: 2px solid #333333;
+    padding: 1.5rem;
+  }
+
+  .image-section {
+    padding: 1.5rem;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .project-btn {
+    padding: 0.5rem 1rem;
+  }
+}
