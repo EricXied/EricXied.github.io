@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="enable-background:new 0 0 47.5 47.5" viewBox="0 0 47.5 47.5" id="cl-button">
+  <defs>
+    <clipPath id="a">
+      <path d="M0 38h38V0H0v38Z"></path>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="matrix(1.25 0 0 -1.25 0 47.5)">
+    <path d="M0 0a4 4 0 0 0-4-4h-28a4 4 0 0 0-4 4v28a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4V0Z" style="fill:#dd2e44;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="translate(37 5)"></path>
+    <path d="M0 0c2.263 0 6.667-.744 6.667-3.473 0-1.116-.776-2.077-1.923-2.077-1.271 0-2.14 1.085-4.744 1.085-3.845 0-5.829-3.256-5.829-7.038 0-3.689 2.015-6.852 5.829-6.852 2.604 0 3.658 1.301 4.93 1.301 1.395 0 2.046-1.394 2.046-2.107 0-2.977-4.682-3.659-6.976-3.659-6.294 0-10.666 4.992-10.666 11.41C-10.666-4.961-6.325 0 0 0" style="fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="translate(13.81 30.448)"></path>
+    <path d="M0 0c0 1.55.992 2.418 2.326 2.418S4.652 1.55 4.652 0v-15.564h5.518c1.582 0 2.264-1.179 2.232-2.233-.06-1.023-.867-2.047-2.232-2.047H2.42c-1.52 0-2.42.992-2.42 2.543V0Z" style="fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="translate(22.332 27.844)"></path>
+  </g>
+</svg>
